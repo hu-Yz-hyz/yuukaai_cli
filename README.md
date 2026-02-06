@@ -116,7 +116,7 @@ yuukaai_cli/
 如有问题或建议，欢迎通过以下方式联系：
 
 - GitHub Issues: [提交问题](https://github.com/hu-Yz-hyz/yuukaai_cli/issues)
-- Email: huyzhong@outlooku
+- Email: huyzhong@outlook.com
 - BiliBili：[BiliBili](https://space.bilibili.com/1523473466?spm_id_from=333.1007.0.0)
 
 捐赠：[爱发电](https://afdian.com/a/hu0503hu)
@@ -128,4 +128,5 @@ yuukaai_cli/
 <p align="center">
   <i>"千年科学学园研讨会会计，随时为老师服务！"</i>
 </p>
+
 
