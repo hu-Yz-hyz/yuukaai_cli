@@ -107,7 +107,7 @@ yuukaai_cli/
 
 - [蔚蓝档案](https://bluearchive-cn.com/) - 早濑优香角色与蔚蓝档案的原作者
 - [DeepSeek](https://deepseek.ai/) - 提供强大的语言模型
-- [阿里云 DashScope](https://bailian.console.aliyun.com/cn-beijing#/home) - API 服务
+- [阿里云百炼](https://bailian.console.aliyun.com/cn-beijing#/home) - API 服务
 
 ### 欢迎提交 Issue 和 Pull Request！
 
@@ -128,5 +128,6 @@ yuukaai_cli/
 <p align="center">
   <i>"千年科学学园研讨会会计，随时为老师服务！"</i>
 </p>
+
 
 
