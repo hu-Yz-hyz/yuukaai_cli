@@ -1,4 +1,5 @@
-//core V1.2.7
+//core V1.2.8
+//sk-24f057174e2d45be9fefcf275bb98596
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -78,7 +79,7 @@ namespace yuukaai.Core
                 }
                 else
                 {
-                    throw new Exception($"API请求失败，可能是过时的版本 当前CORE版本V1.2.7 CLI版本 V1.3.0: {response.StatusCode} - {responseContent}");
+                    throw new Exception($"API请求失败，可能是过时的版本 当前CORE版本V1.2.8 CLI版本 V1.3.1: {response.StatusCode} - {responseContent}");
                 }
             }
             catch (Exception)
@@ -91,7 +92,7 @@ namespace yuukaai.Core
         public void ResetConversation()
         {
             _conversationHistory.Clear();
-            _conversationHistory.Add(new Message { Role = "user", Content = _characterPrompt });
+            _conversationHistory.Add(new Message { Role = "system", Content = _characterPrompt });
         }
     }
 }
