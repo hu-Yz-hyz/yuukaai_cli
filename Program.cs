@@ -1,4 +1,4 @@
-﻿//CLI V1.3.0
+//CLI V1.3.1
 using System;
 using System.Threading.Tasks;
 using yuukaai.Core;
@@ -23,19 +23,29 @@ namespace yuukaai
             Console.WriteLine(@"   | |   | |_| | | |_| | | . \   / ___ \  ");
             Console.WriteLine(@"   |_|    \___/   \___/  |_|\_\ /_/   \_\ ");
             Console.ResetColor();
-            Console.WriteLine("©SFP|CORE V1.2.7|CLI V1.3.0|zh-CN|按Ctrl+C退出");
-            Thread.Sleep(400);
-            Console.WriteLine("[###  ] 60%");
-            Thread.Sleep(300);
-            Console.WriteLine("[#### ] 80%");
-            Thread.Sleep(200);
-            Console.WriteLine("[#####] 100%");
+            Console.WriteLine("CORE V1.2.8|CLI V1.3.1|zh-CN");
+            
+            if(ApiKey == "")
+            {
             Console.Write("[");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("OK");
             Console.ResetColor();
-            Console.Write("] API Existence");
-            Thread.Sleep(320);
+            Console.Write("] APIKEY Existence");
+            }
+            else
+            {
+                Console.Write("[");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("FAIL");
+                Console.ResetColor();
+                Console.WriteLine("] APIKEY does not exist");
+                Console.Write("按回车键退出...");
+                Console.ReadLine();
+                Environment.Exit(0);
+            }
+            
+            Thread.Sleep(350);
             Console.ResetColor();
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Blue;
@@ -47,7 +57,7 @@ namespace yuukaai
             Console.WriteLine(@"   | |   | |_| | | |_| | | . \   / ___ \  ");
             Console.WriteLine(@"   |_|    \___/   \___/  |_|\_\ /_/   \_\ ");
             Console.ForegroundColor = ConsoleColor.Black;
-            Console.WriteLine("©SFP|CORE V1.2.7|CLI V1.3.0|zh-CN|按Ctrl+C退出");
+            Console.WriteLine("©SFP|CORE V1.2.8|CLI V1.3.1|zh-CN|按Ctrl+C退出");
 
             try
             {
@@ -68,6 +78,9 @@ namespace yuukaai
             catch (Exception ex)
             {
                 Console.WriteLine($"程序错误：{ex.Message}");
+                Console.Write("按回车键退出...");
+                Console.ReadLine();
+                Environment.Exit(1);
             }
         }
     }
