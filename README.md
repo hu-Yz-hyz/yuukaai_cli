@@ -6,7 +6,7 @@
 
 *在CLI V1.3.0开始对此项目的基本框架开源*
 
-> 🌸 与千年科学学园研讨会会计早濑优香（Hayase Yuuka）在终端中聊天的 AI 伴侣
+> 🌸 与千年科学学园研讨会会计早濑优香（Hayase Yuuka）在终端中聊天
 
 ## 🚀 快速开始
 
@@ -101,7 +101,7 @@ yuukaai_cli/
 
 ## 📜 许可证
 
-本项目采用 [GNU General Public License v3.0](LICENSE) 许可证开源。
+本项目基础框架采用 [GNU General Public License v3.0](LICENSE) 许可证开源。
 
 ## 🙏 致谢
 
@@ -110,6 +110,18 @@ yuukaai_cli/
 - [阿里云百炼](https://bailian.console.aliyun.com/cn-beijing#/home) - API 服务
 
 ### 欢迎提交 Issue 和 Pull Request！
+
+## 开发计划
+
+> 增加长期记忆能力
+
+>支持自定义apikey及模型
+
+>优化UI
+
+>支持MD及脚本运行（可作为辅助工具化）
+
+>快捷程序打卡方式
 
 ## 📧 联系方式
 
@@ -128,6 +140,7 @@ yuukaai_cli/
 <p align="center">
   <i>"千年科学学园研讨会会计，随时为老师服务！"</i>
 </p>
+
 
 
 
