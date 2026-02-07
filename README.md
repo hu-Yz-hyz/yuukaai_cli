@@ -93,7 +93,7 @@ yuukaai_cli/
 
 > 增加长期记忆能力
 
->支持自定义apikey及模型
+>支持自定义~~apikey~~及模型
 
 >优化UI
 
@@ -118,6 +118,7 @@ yuukaai_cli/
 <p align="center">
   <i>"千年科学学园研讨会会计，随时为老师服务！"</i>
 </p>
+
 
 
 
