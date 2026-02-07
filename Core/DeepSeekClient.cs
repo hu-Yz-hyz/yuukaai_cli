@@ -1,5 +1,4 @@
 //core V1.2.8
-//sk-24f057174e2d45be9fefcf275bb98596
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -96,3 +95,4 @@ namespace yuukaai.Core
         }
     }
 }
+
