@@ -24,6 +24,8 @@ cd yuukaai_cli
 ```csharp
 private const string ApiKey = "your-api-key-here";
 private const string ApiUrl = "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions";
+//... ...
+if(ApiKey == "your-api-key-here")
 ```
 
 > 🔑 获取 API Key：[阿里云百炼](https://bailian.console.aliyun.com/cn-beijing#/home)
