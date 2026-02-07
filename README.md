@@ -1,49 +1,28 @@
-#  YuukaAI CLI
+#  YuukaAI CLI（YuukaAI V1）
 
 [![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
 [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%7CLinux%7CmacOS-blue)](https://github.com/hu-Yz-hyz/yuukaai_cli)
+[![BlueArchive](https://img.shields.io/badge/Blue%20Archive-YUUKA-%235BA3E8?style=flat)](https://bluearchive-cn.com/)
 
-*在CLI V1.3.0开始对此项目的基本框架开源*
+*注：在CLI V1.3.0开始对此项目的基本框架开源*
+
+*CORE V1.3.0版本以后修改了部分文件的命名*
 
 > 🌸 与千年科学学园研讨会会计早濑优香（Hayase Yuuka）在终端中聊天
 
 ## 🚀 快速开始
 
-### 1. 克隆仓库
+### 配置 API Key
 
-```bash
-git clone https://github.com/hu-Yz-hyz/yuukaai_cli.git
-cd yuukaai_cli
-```
+**自定义**：在 `请选择你要使用的APIKEY:` 中输入`2`后输入API Key
 
-### 2. 配置 API Key
-
-在 `Program.cs` 中替换为你自己的 API Key：
-
-```csharp
-private const string ApiKey = "your-api-key-here";
-private const string ApiUrl = "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions";
-//... ...
-if(ApiKey == "your-api-key-here")
-```
 
 > 🔑 获取 API Key：[阿里云百炼](https://bailian.console.aliyun.com/cn-beijing#/home)
 
-### 3. 构建并运行
+### 二次构建发布可执行文件
 
-```bash
-# 还原依赖
-dotnet restore
-
-# 构建项目
-dotnet build
-
-# 运行
-dotnet run
-```
-
-### 4. 发布可执行文件
+*公开代码部分无默认APIKEY*
 
 ```bash
 # Windows
@@ -58,7 +37,7 @@ dotnet publish -c Release -r osx-x64 --self-contained true
 
 ## 📖 使用说明
 
-启动程序后，你会看到早濑优香的 ASCII Logo 和加载动画：
+启动程序后，你会看到早濑优香的 ASCII Logo 和加载信息：
 
 ```
  __   __  _   _   _   _   _  __     _     
@@ -66,7 +45,7 @@ dotnet publish -c Release -r osx-x64 --self-contained true
   \ V /  | | | | | | | | | ' /    / _ \   
    | |   | |_| | | |_| | | . \   / ___ \  
    |_|    \___/   \___/  |_|\_\ /_/   \_\ 
-©SFP|CORE V1.2.7|CLI V1.3.0|zh-CN|按Ctrl+C退出
+CORE V1.3.0|CLI V1.3.2|zh-CN
 ```
 
 在 `>` 提示符后输入消息即可开始对话：
@@ -74,9 +53,6 @@ dotnet publish -c Release -r osx-x64 --self-contained true
 ```
 > 你好优香！
 你好老师！今天有什么我可以帮你的吗？无论是收据整理还是数学问题都可以交给我哦。
-
-> 帮我算一下这道题
-当然，请把题目发给我吧！
 ```
 
 按 `Ctrl+C` 退出程序。
@@ -93,7 +69,7 @@ yuukaai_cli/
 │       ├── Message.cs      # 消息模型
 │       ├── ChatResponse.cs # API 响应模型
 │       └── ChatChoice.cs   # 选择项模型
-└── favicon.ico             # 应用程序图标
+└── favicon.ico             # 应用程序图标（可选）
 ```
 
 ## 🔧 自定义角色设定
@@ -123,7 +99,7 @@ yuukaai_cli/
 
 >支持MD及脚本运行（可作为辅助工具化）
 
->快捷程序打卡方式
+>快捷程序打开方式
 
 ## 📧 联系方式
 
