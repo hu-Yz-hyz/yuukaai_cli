@@ -5,9 +5,9 @@ namespace yuukaai.Core.Models
     public class Message
     {
         [JsonProperty("role")]
-        public string Role { get; set; }
+        public string? Role { get; set; }
 
         [JsonProperty("content")]
-        public string Content { get; set; }
+        public string? Content { get; set; }
     }
 }

@@ -6,6 +6,6 @@ namespace yuukaai.Core.Models
     public class ChatChoice
     {
         [JsonProperty("message")]
-        public Message Message { get; set; }
+        public Message? Message { get; set; }
     }
 }

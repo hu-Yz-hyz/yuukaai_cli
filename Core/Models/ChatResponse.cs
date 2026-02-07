@@ -7,6 +7,6 @@ namespace yuukaai.Core.Models
     public class ChatResponse
     {
         [JsonProperty("choices")]
-        public List<ChatChoice> Choices { get; set; }
+        public List<ChatChoice>? Choices { get; set; }
     }
 }
