@@ -1,4 +1,4 @@
-//CLI V1.4.0
+//CLI V1.4.1
 using System;
 using System.Threading.Tasks;
 using yuukaai.Core;
@@ -14,7 +14,8 @@ namespace yuukaai
 
         static async Task Main(string[] args)
         {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
+            
             
             // 显示程序标题
             ShowBanner();
@@ -56,7 +57,7 @@ namespace yuukaai
                     .LeftJustified()
                     .Color(Color.Cyan1));
             
-            AnsiConsole.MarkupLine("[grey62]CORE V1.3.0 | CLI V1.4.0 | zh-CN[/]");
+            AnsiConsole.MarkupLine("[grey62]CORE V1.3.0 | CLI V1.4.1 | zh-CN[/]");
             AnsiConsole.Write(new Rule().RuleStyle("grey"));
         }
 
@@ -95,8 +96,8 @@ namespace yuukaai
                     .Color(Color.Blue)
                     );
             
-            AnsiConsole.MarkupLine("[blue]©SFP | CORE V1.3.0 | CLI V1.4.0 | zh-CN | 按 Ctrl+C 退出[/]");
-            AnsiConsole.Write(new Rule().RuleStyle("blue"));
+            AnsiConsole.MarkupLine("[blue]©SFP | CORE V1.3.0 | CLI V1.4.1 | zh-CN | 按 Ctrl+C 退出[/]");
+            AnsiConsole.Write(new Rule().RuleStyle("white"));
         }
 
         static async Task StartChatAsync()
@@ -114,8 +115,12 @@ namespace yuukaai
                                 return ValidationResult.Error("[red]请输入有效内容[/]");
                             return ValidationResult.Success();
                         }));
+                
+
+               var spinner = Spinner.Known.Line;
+                
                 var reply = await AnsiConsole.Status()
-                    .Spinner(Spinner.Known.Dots)
+                    .Spinner(spinner)
                     .SpinnerStyle(Style.Parse("blue"))
                     .StartAsync("优香思考中...", async ctx =>
                     {
