@@ -26,13 +26,13 @@
 
 ```bash
 # Windows
-dotnet publish -c Release -r win-x64 --self-contained true
+dotnet publish -c Release -r win-x64 /p:PublishSingleFile=true 
 
 # Linux
-dotnet publish -c Release -r linux-x64 --self-contained true
+dotnet publish -c Release -r linux-x64 /p:PublishSingleFile=true 
 
 # macOS
-dotnet publish -c Release -r osx-x64 --self-contained true
+dotnet publish -c Release -r osx-x64 /p:PublishSingleFile=true 
 ```
 
 ## 📖 使用说明
@@ -46,7 +46,7 @@ dotnet publish -c Release -r osx-x64 --self-contained true
    | |   | |_| | | |_| | |   <  | (_| |
    |_|    \__,_|  \__,_| |_|\_\  \__,_|
 
-CORE V1.3.0 | CLI V1.4.0 | zh-CN
+CORE V1.3.0 | CLI V1.4.1 | zh-CN
 ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────请选择 APIKEY 配置方式
 
 > 使用默认 APIKEY     
@@ -84,7 +84,7 @@ yuukaai_cli/
 
 ## 📜 许可证
 
-本项目基础框架采用 [GNU General Public License v3.0](LICENSE) 许可证开源。
+本项目基础框架采用 [AGPL-3.0 许可证](LICENSE) 许可证开源。
 
 ## 🙏 致谢
 

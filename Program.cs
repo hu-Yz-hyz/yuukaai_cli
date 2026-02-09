@@ -1,4 +1,4 @@
-//CLI V1.4.1
+﻿//CLI V1.4.1
 using System;
 using System.Threading.Tasks;
 using yuukaai.Core;
@@ -75,7 +75,7 @@ namespace yuukaai
             switch (choice)
             {
                 case "使用默认 APIKEY":
-                    ApiKey = "";
+                    ApiKey = "sk-11554cd112b941e4a9ea609d166379db";
                     break;
                     
                 case "手动输入 APIKEY":
