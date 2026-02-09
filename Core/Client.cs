@@ -78,7 +78,7 @@ namespace yuukaai.Core
                 }
                 else
                 {
-                    throw new Exception($"API请求失败，可能是过时的版本 也可能是自定义APIKEY错误 当前CORE版本V1.3.0 CLI版本 V1.4.0: {response.StatusCode} - {responseContent}");
+                    throw new Exception($"API请求失败，可能是过时的版本 也可能是自定义APIKEY错误 当前CORE版本V1.3.0 CLI版本 V1.4.1: {response.StatusCode} - {responseContent}");
                 }
             }
             catch (Exception)
