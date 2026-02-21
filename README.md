@@ -1,5 +1,6 @@
 #  YuukaAI CLI（YuukaAI V1）
-
+# 注：V1.*  系列已停止更新
+[![BlueArchive](https://img.shields.io/badge/YuukaAI%20-GUI(V2)-%235BA3E8?style=flat)](https://github.com/hu-Yz-hyz/yuukaai_gui)
 [![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
 [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%7CLinux%7CmacOS-blue)](https://github.com/hu-Yz-hyz/yuukaai_cli)
@@ -123,6 +124,7 @@ yuukaai_cli/
 <p align="center">
   <i>"完美～与计算一致"</i>
 </p>
+
 
 
 
